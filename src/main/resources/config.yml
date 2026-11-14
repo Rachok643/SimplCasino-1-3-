@@ -1,0 +1,24 @@
+min-bet: 50.0
+max-bet: 50000.0
+
+# Множители при совпадении 3 одинаковых символов
+multipliers:
+  DIAMOND: 10.0
+  EMERALD: 7.0
+  GOLD_INGOT: 5.0
+  IRON_INGOT: 3.0
+  APPLE: 2.0
+
+# Множитель при совпадении 2 одинаковых символов подряд
+two-match-multiplier: 1.5
+
+messages:
+  prefix: "&8[&6Казино&8] &r"
+  usage: "&cИспользование: /casino <ставка>"
+  invalid-number: "&cВведите корректное число!"
+  bet-limits: "&cСтавка должна быть от &e%min% &cдо &e%max%&c!"
+  no-money: "&cУ вас недостаточно средств на балансе!"
+  already-playing: "&cВы уже крутите барабан!"
+  win: "&aПоздравляем! Вы выиграли &e%amount%$&a!"
+  lose: "&cУвы, ставка не сыграла. Попробуйте еще раз!"
+  
