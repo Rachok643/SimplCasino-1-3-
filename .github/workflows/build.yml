@@ -9,6 +9,31 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: Configure Maven
+        run: |
+          mkdir -p ~/.m2
+          cat << 'EOF' > ~/.m2/settings.xml
+          <settings>
+            <profiles>
+              <profile>
+                <id>paper</id>
+                <repositories>
+                  <repository>
+                    <id>papermc</id>
+                    <url>https://repo.papermc.io/repository/maven-public/</url>
+                  </repository>
+                  <repository>
+                    <id>jitpack</id>
+                    <url>https://jitpack.io</url>
+                  </repository>
+                </repositories>
+              </profile>
+            </profiles>
+            <activeProfiles>
+              <activeProfile>paper</activeProfile>
+            </activeProfiles>
+          </settings>
+          EOF
       - run: mvn clean package
       - uses: actions/upload-artifact@v4
         with:
