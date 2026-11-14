@@ -15,8 +15,8 @@
 
     <repositories>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://spigotmc.org</url>
+            <id>papermc</id>
+            <url>https://papermc.io</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -26,8 +26,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
             <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
@@ -52,4 +52,3 @@
         </plugins>
     </build>
 </project>
-
