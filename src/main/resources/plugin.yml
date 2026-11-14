@@ -1,0 +1,16 @@
+name: SimpleCasino
+version: '1.0.0'
+main: ru.casino.SimpleCasino
+api-version: '1.21'
+depend: [Vault]
+description: Плагин на слот-машину казино для 1.21.11 - 26.3
+commands:
+  casino:
+    description: Открыть слот-машину казино
+    usage: /casino <ставка>
+    permission: simplecasino.use
+permissions:
+  simplecasino.use:
+    description: Доступ к игре в казино
+    default: true
+    
